@@ -9,7 +9,7 @@ namespace ConsoleApp1
 
             const double a = 5;
             const double b = 7;
-            double s, sum, g, gCos;
+            double s, sum, g, gCos; // переменные для площади, суммы квадратов сторон, длины гипотенузы
             s = (a * b) / 2 * Math.Sin(90 * Math.PI / 180);
             sum = Math.Pow(a, 2) + Math.Pow(b, 2);
             g = Math.Sqrt(sum);
