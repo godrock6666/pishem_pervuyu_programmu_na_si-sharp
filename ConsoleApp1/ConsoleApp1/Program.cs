@@ -7,18 +7,14 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
 
-            const double a = 5;
-            const double b = 7;
-            double s, sum, g, gCos; // переменные для площади, суммы квадратов сторон, длины гипотенузы
-            s = (a * b) / 2 * Math.Sin(90 * Math.PI / 180);
-            sum = Math.Pow(a, 2) + Math.Pow(b, 2);
-            g = Math.Sqrt(sum);
-            gCos = Math.Sqrt(sum) - 2 * a * b * Math.Cos(90 * Math.PI / 180);
-
-            Console.WriteLine("Площадь треугольника равна " + s);
-            Console.WriteLine("Длина гипотенузы согласно теоремы пифагора  равна " + g);
-            Console.WriteLine("Длина гипотенузы согласно теореме косинусов равна " + gCos);
-            Console.ReadKey();
+            int h, g;
+            Console.WriteLine("Укажите количество забитых голов хозяевами");
+            h = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Укажите количество забитых голов гостями");
+            g = Convert.ToInt32(Console.ReadLine());
+            if (h > g) Console.WriteLine("Победили хозяева");
+            else if (h < g) Console.WriteLine("Победили гости");
+            else Console.WriteLine("Ничья");
         }
     }
 }
