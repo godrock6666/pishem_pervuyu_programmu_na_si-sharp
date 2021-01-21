@@ -7,14 +7,27 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
 
-            int h, g;
-            Console.WriteLine("Укажите количество забитых голов хозяевами");
-            h = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Укажите количество забитых голов гостями");
-            g = Convert.ToInt32(Console.ReadLine());
-            if (h > g) Console.WriteLine("Победили хозяева");
-            else if (h < g) Console.WriteLine("Победили гости");
-            else Console.WriteLine("Ничья");
+            int value = 1;//ONE
+            for (int i = 0; i < 20; i++)
+                Console.Write($"{value += 3} ");
+            string str; //TWO
+            do
+                str = Console.ReadLine();
+            while (str != "Root");
+            Random sc = new Random();//THREE
+            int[] mas = new int[5];
+            int[] mas_1 = new int[mas.Length];
+            int[] mas_2 = new int[mas.Length];
+            for (int i = 0; i < mas.Length; i++)
+            {
+                mas[i] = sc.Next(0, 10);
+                mas_1[i] = sc.Next(0, 10);
+                mas_2[i] = mas[i] + mas_1[i];
+                Console.WriteLine(mas_2[i]);
+
+
+
+            }
         }
     }
 }
