@@ -1,0 +1,2 @@
+C:\Users\godro\source\repos\RPN New\RPN New\obj\Debug\RPN New.csprojAssemblyReference.cache
+C:\Users\godro\source\repos\RPN New\RPN New\obj\Debug\RPN New.csproj.CoreCompileInputs.cache
